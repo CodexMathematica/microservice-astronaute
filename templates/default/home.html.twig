@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block javascripts %}
+    <script defer src="{{ asset('assets/js/flying-astronaut.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    <p class="hello">Bonjour, je suis {{ username }} et je suis un {{ rank }}.</p>
+    <img class="astronaut" id="astronaut" src="{{ asset('assets/images/astro.png') }}" alt="Un astronaute qui flotte dans l'espace">
+    <a href="{{ path('about') }}">A propos</a>
+{% endblock %}

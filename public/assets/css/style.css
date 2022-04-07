@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.astronaut {
+    position: absolute;
+    width: 300px;
+    animation: pulse 5s infinite alternate;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+    background-image: url('/assets/images/bg1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: darkmagenta;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: pink;
+}
+
+.hello {
+    position: absolute;
+    left: 7%;
+    top: 10vh;
+}
+
+main {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main a {
+    background-color: black;
+    border: solid 2px whitesmoke;
+    border-radius: 14px;
+    color: whitesmoke;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+}
+
+main a:hover {
+    background-color: darkmagenta;
+    color: goldenrod;
+}
+
+@keyframes pulse
+{
+    0% 
+    {
+        transform: scale( .95);
+    }
+    100% 
+    {
+        transform: scale( 1.05);
+    }
+
+}
